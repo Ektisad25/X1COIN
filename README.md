@@ -1,4 +1,4 @@
-X1COIN - Utilizing the data of Bitcoin Parameters and using AI to fix the issues with Bitcoin. X1COIN AI
+Using 15 years of Bitcoin data, we employed AI to address the issues with Bitcoin. Welcome to X1COIN, the world's currency.
 
 
 
