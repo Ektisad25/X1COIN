@@ -1,4 +1,4 @@
-X1coin v1.1.0 with better parameters and faster block confirmations. 
+X1COIN - Utilizing the data of Bitcoin Parameters and using AI to fix the issues with Bitcoin. X1COIN AI
 
 
 
