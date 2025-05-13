@@ -216,7 +216,7 @@ $ make
 $ cd ..
 $ CC=$(pwd)/honggfuzz/hfuzz_cc/hfuzz-clang \
       CXX=$(pwd)/honggfuzz/hfuzz_cc/hfuzz-clang++ \
-      ./configure --disable-wallet --with-gui=no \
+      ./configure --enable-wallet --with-gui=no \
                   --with-sanitizers=address,undefined
 $ git apply << "EOF"
 diff --git a/src/x1coind.cpp b/src/x1coind.cpp

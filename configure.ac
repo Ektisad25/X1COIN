@@ -140,8 +140,8 @@ AM_CONDITIONAL([HAVE_DOXYGEN], [test -n "$DOXYGEN"])
 AC_ARG_VAR([PYTHONPATH], [Augments the default search path for python module files])
 
 AC_ARG_ENABLE([wallet],
-  [AS_HELP_STRING([--disable-wallet],
-  [disable wallet (enabled by default)])],
+  [AS_HELP_STRING([--enable-wallet],
+  [enable wallet (enabled by default)])],
   [enable_wallet=$enableval],
   [enable_wallet=auto])
 
@@ -152,8 +152,8 @@ AC_ARG_WITH([sqlite],
   [use_sqlite=auto])
 
 AC_ARG_WITH([bdb],
-  [AS_HELP_STRING([--without-bdb],
-  [disable bdb wallet support (default is enabled if wallet is enabled)])],
+  [AS_HELP_STRING([--with-bdb],
+  [enable bdb wallet support (default is enabled if wallet is enabled)])],
   [use_bdb=$withval],
   [use_bdb=auto])
 
@@ -1978,9 +1978,6 @@ AC_CONFIG_LINKS([test/functional/test_runner.py:test/functional/test_runner.py])
 AC_CONFIG_LINKS([test/fuzz/test_runner.py:test/fuzz/test_runner.py])
 AC_CONFIG_LINKS([test/util/test_runner.py:test/util/test_runner.py])
 AC_CONFIG_LINKS([test/util/rpcauth-test.py:test/util/rpcauth-test.py])
-AC_CONFIG_LINKS([src/qt/Makefile:src/qt/Makefile])
-AC_CONFIG_LINKS([src/qt/test/Makefile:src/qt/test/Makefile])
-AC_CONFIG_LINKS([src/test/Makefile:src/test/Makefile])
 
 dnl boost's m4 checks do something really nasty: they export these vars. As a
 dnl result, they leak into secp256k1's configure and crazy things happen.
