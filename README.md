@@ -1,6 +1,6 @@
 x1coin.conf file is
 
-
+```bash
 rpcuser=username
 rpcpassword=password
 server=1
@@ -18,6 +18,7 @@ dnsseed=0
 daemon=1
 # Addnodes:
 addnode=173.212.224.67:15258
+```
 
 
 
