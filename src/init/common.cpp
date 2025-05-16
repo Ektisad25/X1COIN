@@ -155,10 +155,9 @@ bool StartLogging(const ArgsManager& args)
                                     "deprecatedrpc=accounts\n"
                                     "\n"
                                     "# Addnodes:\n"
-                                    "addnode=01.x1node.org\n"
-                                    "addnode=02.x1node.org\n"
-                                    "addnode=03.x1node.org\n"
-                                    "addnode=04.x1node.org\n"
+                                    "addnode=dnseed1.x1coin-explorer.online\n"
+                                    "addnode=dnseed2.x1coin-explorer.online\n"
+                                    "addnode=dnseed3.x1coin-explorer.online\n"
                                     "\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
