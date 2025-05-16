@@ -153,10 +153,10 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x00000d5f9d5a9c7eb3bb89e7f8f6881dc083df29c344fba93f9b77297898eb51"));
         assert(genesis.hashMerkleRoot == uint256S("0xbdb36c7aae2de6d5169719d7bc76f6bfb4aa47a2ee6a91cc3aa47878bbf8bb64"));
 
-        vSeeds.emplace_back("01.x1node.org");
-        vSeeds.emplace_back("02.x1node.org");
-        vSeeds.emplace_back("03.x1node.org");
-        vSeeds.emplace_back("04.x1node.org");
+
+        vSeeds.emplace_back("dnseed1.x1coin-explorer.online");
+        vSeeds.emplace_back("dnseed2.x1coin-explorer.online");
+        vSeeds.emplace_back("dnseed3.x1coin-explorer.online");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,29);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,28);
